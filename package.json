@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run dev && node ./server.js",
-    "build": "npm run dev && node ./server.js",
-    "dev": "webpack --mode production",
-    "heroku-postbuild": "npm install"
+    "start": "npm run build && node ./server.js",
+    "build": "webpack --mode production",
+    "heroku-prebuild": "npm install --dev"
   },
   "keywords": [],
   "author": "",
