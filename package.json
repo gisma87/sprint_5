@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve",
-    "build": "webpack",
+    "start": "npm run build && node ./server.js",
+    "build": "webpack --mode production",
     "heroku-postbuild": "npm install"
   },
   "keywords": [],
@@ -42,6 +42,7 @@
     "@types/node": "^16.4.13",
     "@types/react": "^17.0.17",
     "@types/react-dom": "^17.0.9",
+    "express": "^4.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
